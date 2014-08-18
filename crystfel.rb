@@ -31,6 +31,13 @@ class Crystfel < Formula
     system "make check > #{prefix}/tests.log" if build.with? "test"
   end
 
+  def caveats
+    s = <<-EOS.undent
+      For indexing diffraciton patterns you should install MOSFLM or DirAx.
+      The OpenCl option for speeding up the simulation of diffraction patterns does
+      not compile on OSX. A patch is on the way.
+      EOS
+
   test do
     system "indexamajig --help"
   end
