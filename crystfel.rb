@@ -37,6 +37,7 @@ class Crystfel < Formula
       The OpenCl option for speeding up the simulation of diffraction patterns does
       not compile on OSX. A patch is on the way.
       EOS
+  end
 
   test do
     system "indexamajig --help"
