@@ -2,8 +2,8 @@ require "formula"
 
 class Crystfel < Formula
   homepage "http://www.desy.de/~twhite/crystfel/index.html"
-  url "http://www.desy.de/~twhite/crystfel/crystfel-0.5.3a.tar.gz"
-  sha1 "8f18954245b285ef8c97deb4f941ea6e160d9c91"
+  url "http://www.desy.de/~twhite/crystfel/crystfel-0.5.4.tar.gz"
+  sha1 "b563ea38d37411b7e321435cf35b8c67f64e07e3"
 
   option "with-test","runs the test suit"
   option "with-opencl","enables GPU acceleration for pattern_sim"
