@@ -2,8 +2,8 @@ require "formula"
 
 class Crystfel < Formula
   homepage "http://www.desy.de/~twhite/crystfel/index.html"
-  url "http://www.desy.de/~twhite/crystfel/crystfel-0.5.4.tar.gz"
-  sha1 "b563ea38d37411b7e321435cf35b8c67f64e07e3"
+  url "http://www.desy.de/~twhite/crystfel/crystfel-0.5.4a.tar.gz"
+  sha1 "da39a3ee5e6b4b0d3255bfef95601890afd80709"
 
   option "with-test","runs the test suit"
   option "with-opencl","enables GPU acceleration for pattern_sim"
@@ -33,9 +33,9 @@ class Crystfel < Formula
 
   def caveats
     s = <<-EOS.undent
-      For indexing diffraciton patterns you should install MOSFLM or DirAx.
+      For indexing diffraction patterns you should install MOSFLM or DirAx.
       The OpenCl option for speeding up the simulation of diffraction patterns does
-      not compile on OSX. A patch is on the way.
+      not work OSX yet.
       EOS
   end
 
