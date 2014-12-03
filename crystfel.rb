@@ -34,8 +34,7 @@ class Crystfel < Formula
   def caveats
     s = <<-EOS.undent
       For indexing diffraction patterns you should install MOSFLM or DirAx.
-      The OpenCl option for speeding up the simulation of diffraction patterns does
-      not work OSX yet.
+      The OpenCl option s not supported on OSX yet.
       EOS
   end
 
