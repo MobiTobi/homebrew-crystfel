@@ -15,7 +15,7 @@ class Crystfel < Formula
   depends_on "gdk-pixbuf"
   depends_on "gtk-doc"
   depends_on "gtk+"
-  depends_on "hdf5" => "enable-threadsafe"
+  depends_on "hdf5" => "with-threadsafe"
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     args = ["--disable-debug",
